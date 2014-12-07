@@ -2,7 +2,7 @@ body{
 	background-color:#000;	
 	background-color:#F7F7F7;
 	background-color:#e7ebf2;
-
+	
 	/*background: url(../imagenes/fondo2.png) repeat-x ;*/
 	color:#333333;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -13,6 +13,7 @@ body{
 	background-color: #3b5998;
 	background-color:#FEEA9A;
 	background-color:#d9d9d9;
+	/*background-color:#000000;*/
 }
 #contenedor{
 	background-color: #0f6da4;
@@ -233,7 +234,7 @@ background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-border-bottom: 2px solid #4783c4;
+border-bottom: 2px solid #adb96e;
 width: auto;
 }
 .cuerpo{
@@ -293,27 +294,27 @@ width: auto;
 }
 input[type=text],input.texto,textarea,select,option,input[type=password],input[type=date],input[type=search],input[type=number]{
 	border:#F0F0F0 1px solid;
-	border-bottom:#4783c4 1px solid;
+	border-bottom:#adb96e 1px solid;
 	padding:8px;
 	margin:3px !important;
 	
 }
 input[type=text]:focus,input[type=number]:focus,input.texto:focus,textarea:focus,select:focus,option:focus,input[type=password]:focus{
-	/*border-left:#4783c4 1px solid;
-	border-right:#4783c4 1px solid;
-	-webkit-box-shadow:0px 0px 5px #4783c4;*/
+	/*border-left:#adb96e 1px solid;
+	border-right:#adb96e 1px solid;
+	-webkit-box-shadow:0px 0px 5px #adb96e;*/
 	outline:none;
-	border-bottom:#4783c4 1px dashed;
+	border-bottom:#adb96e 1px dashed;
 }
 input[type=submit].enviar,input[type=submit]{
 	margin-top:23px;
 
-	border: 1px solid #4783c4;
+	border: 1px solid #adb96e;
 	color:#FFF;
 	cursor:pointer;
 
 	padding:7px 10px 7px 10px;
-	background-color:#4783c4
+	background-color:#adb96e
 }
 .botonplomo{
 	padding:3px 10px 3px 10px;
@@ -330,7 +331,7 @@ border-radius:3px;
 }
 input[type=submit].enviar:hover,input[type=submit]:hover{
 
-background-color:#518fd1
+background-color:#8A9749
 }
 input[readonly]{
 	background-color:#EFEFEF;
@@ -350,7 +351,7 @@ h3{
 }
 /*Fin de estilo de formulario*/
 a,a.enlace{
-	color:#0b74ab;
+	color:#93A04D;
 	text-decoration:none;	
 }
 a.enlaceusuario{
@@ -564,7 +565,7 @@ table.tablalistado tr.cabecera td{
 	padding: 5px;
 	color: #FFF;
 	font-weight: bold;
-	background-color: #4783c4;	
+	background-color: #adb96e;	
 }
 table.tablalistado tr.contenido td{
 	padding:5px;
