@@ -8,7 +8,7 @@ class ventadetalle extends bd{
 	}
 	function masMenosVendido($where,$mas=1){
 		
-		$this->campos=array("sum(cantidad) as cantidadVendida,codproducto,sum(preciounitario),sum(`subtotal`) as subtotal,id");
+		$this->campos=array("sum(cantidad) as cantidadVendida,codproducto,sum(precio),sum(`total`) as subtotal,id");
 		return $this->getRecords($where." and activo=1","sum(cantidad)","codproducto",0,0,$mas);	
 	}
 }
