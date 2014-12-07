@@ -33,7 +33,7 @@ include_once '../../cabecerahtml.php';
 						<td><?php campos("Tipo de Producto","codtipo","select",$tip,0,"",$prod['codproductotipo']);?></td>
 					</tr>
                     <tr>
-						<td><?php campos("Caracteristica","caracteristica","text",$prod['caracteristica']);?></td>
+						<td><?php campos("Caracteristica","caracteristica","textarea",$prod['caracteristica'],0,array("rows"=>"10","cols"=>40));?></td>
 					</tr>
                     <tr>
 						<td><?php campos("Dirección Web","direccionweb","text",$prod['direccionweb']);?></td>

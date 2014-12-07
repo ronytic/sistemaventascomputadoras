@@ -25,7 +25,7 @@ include_once '../../cabecerahtml.php';
 						<td><?php campos("Tipo de Producto","codproductotipo","select",$tip);?></td>
 					</tr>
                     <tr>
-						<td><?php campos("Caracteristica","caracteristica","text");?></td>
+						<td><?php campos("Caracteristica","caracteristica","textarea","",0,array("rows"=>"10","cols"=>40));?></td>
 					</tr>
                     <tr>
 						<td><?php campos("Dirección Web","direccionweb","text");?></td>
