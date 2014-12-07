@@ -10,20 +10,20 @@ include_once("../../class/producto.php");
 $producto=new producto;
 $prod=array_shift($producto->mostrar($id));
 
-include_once("../../class/tipo.php");
-$tipo=new tipo;
-$tip=array_shift($tipo->mostrar($prod['codtipo']));
+include_once("../../class/productotipo.php");
+$productotipo=new productotipo;
+$tip=array_shift($productotipo->mostrar($prod['codproductotipo']));
 
 $pdf=new PDF("P","mm","letter");
 
 $pdf->AddPage();
 mostrarI(array("Nombre"=>$prod['nombre'],
-				"Descripción"=>$prod['descripcion'],
-				"Código de Barra"=>$prod['codbarra'],
+				"Caracteristica"=>$prod['caracteristica'],
+				"Código de Barra"=>$prod['codigonserie'],
 				"Tipo de Producto"=>$tip['nombre'],
 				
 				
-				"Observación"=>$prod['observacion'],
+				"direccionweb"=>$prod['direccionweb'],
 			));
 
 /*$foto="../foto/".$emp['foto'];

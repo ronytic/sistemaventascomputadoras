@@ -6,13 +6,18 @@ $producto=new producto;
 extract($_POST);
 //empieza la copia de archivos
 $valores=array(	"nombre"=>"'$nombre'",
-				"descripcion"=>"'$descripcion'",
-				"codtipo"=>"'$codtipo'",
-				"codbarra"=>"'$codbarra'",
+				"codproductotipo"=>"'$codproductotipo'",
+				"caracteristica"=>"'$caracteristica'",
+				"direccionweb"=>"'$direccionweb'",
 				
-				"observacion"=>"'$observacion'",
 				
+				"codigonserie"=>"'$codigonserie'",
 				);
+				
+if($_FILES['imagen']['name']!=""){
+	@copy($_FILES['imagen']['tmp_name'],"../../imagenes/productos/".$_FILES['imagen']['name']);	
+	$valores["imagen"]="'".$_FILES['imagen']['name']."'";
+}
 				$producto->actualizar($valores,$id);
 				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
 

@@ -3,9 +3,9 @@ include_once("../../login/check.php");
 $titulo="Listado de Productos";
 $folder="../../";
 
-include_once("../../class/tipo.php");
-$tipo=new tipo;
-$tip=todolista($tipo->mostrarTodo(),"codtipo","nombre","");
+include_once("../../class/productotipo.php");
+$productotipo=new productotipo;
+$tip=todolista($productotipo->mostrarTodo(),"codproductotipo","nombre","");
 
 $dest=array("Procesado"=>"Procesado","Directo"=>"Directo");
 include_once("../../funciones/funciones.php");
@@ -21,7 +21,7 @@ include_once "../../cabecerahtml.php";
                 <table class="tablabus">
                     <tr>
                         <td><?php campos("Nombre","nombre","text","",1,array("size"=>15));?></td>
-                        <td width="250"><?php campos("Tipo de Producto","codtipo","select",$tip);?></td>
+                        <td width="250"><?php campos("Tipo de Producto","codproductotipo","select",$tip);?></td>
                         <td><?php campos("Buscar","enviar","submit","",0,array("size"=>15));?></td>
                     </tr>
                 </table>

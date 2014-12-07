@@ -15,13 +15,16 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 	$mensaje[]="Archivo no válido del curriculum. Verifique e intente nuevamente";
 }
 */
+if($_FILES['imagen']['name']!=""){
+	@copy($_FILES['imagen']['tmp_name'],"../../imagenes/productos/".$_FILES['imagen']['name']);	
+}
 $valores=array(	"nombre"=>"'$nombre'",
-				"descripcion"=>"'$descripcion'",
-				"codtipo"=>"'$codtipo'",
-				"codbarra"=>"'$codbarra'",
+				"codproductotipo"=>"'$codproductotipo'",
+				"caracteristica"=>"'$caracteristica'",
+				"direccionweb"=>"'$direccionweb'",
 				
-				"observacion"=>"'$observacion'",
-				
+				"imagen"=>"'".$_FILES['imagen']['name']."'",
+				"codigonserie"=>"'$codigonserie'",
 				);
 				$producto->insertar($valores);
 				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
