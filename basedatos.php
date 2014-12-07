@@ -5,6 +5,6 @@ setlocale(LC_ALL, 'esp');
 $host="localhost";
 $user="root";
 $pass="";
-$database="administracionphilips";
+$database="sistemaventascomputadoras";
 
 ?>
