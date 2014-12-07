@@ -3,9 +3,9 @@ include_once '../../login/check.php';
 $folder="../../";
 $titulo="Modificar Tipo de Producto";
 $id=$_GET['id'];
-include_once '../../class/tipo.php';
-$tipo=new tipo;
-$tip=array_shift($tipo->mostrar($id));
+include_once '../../class/productotipo.php';
+$productotipo=new productotipo;
+$tip=array_shift($productotipo->mostrar($id));
 /*include_once("../../class/proveedor.php");
 $proveedor=new proveedor;
 $prov=todolista($proveedor->mostrarTodo(),"codproveedor","nombre","");*/
@@ -28,9 +28,7 @@ include_once '../../cabecerahtml.php';
 					<tr>
 						<td><?php campos("Descripción","descripcion","text",$tip['descripcion']);?></td>
 					</tr>
-                    <tr>
-						<td><?php campos("Observación","observacion","textarea",$tip['observacion']);?></td>
-					</tr>
+                   
 					<tr><td><?php campos("Guardar","guardar","submit");?></td></tr>
 				</table>
                 </form>

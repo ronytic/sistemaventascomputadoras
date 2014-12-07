@@ -1,8 +1,8 @@
 <?php
 include_once("../../login/check.php");
 if(!empty($_POST)):
-include_once("../../class/tipo.php");
-$tipo=new tipo;
+include_once("../../class/productotipo.php");
+$productotipo=new productotipo;
 
 extract($_POST);
 //empieza la copia de archivos
@@ -17,10 +17,9 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 */
 $valores=array(	"nombre"=>"'$nombre'",
 				"descripcion"=>"'$descripcion'",
-				"observacion"=>"'$observacion'",
 				
 				);
-				$tipo->insertar($valores);
+				$productotipo->insertar($valores);
 				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
 
 

@@ -1,16 +1,15 @@
 <?php
 include_once("../../login/check.php");
 if(!empty($_POST)):
-include_once("../../class/tipo.php");
-$tipo=new tipo;
+include_once("../../class/productotipo.php");
+$productotipo=new productotipo;
 extract($_POST);
 //empieza la copia de archivos
 $valores=array(	"nombre"=>"'$nombre'",
 				"descripcion"=>"'$descripcion'",
-				"observacion"=>"'$observacion'",
 				
 				);
-				$tipo->actualizar($valores,$id);
+				$productotipo->actualizar($valores,$id);
 				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
 
 

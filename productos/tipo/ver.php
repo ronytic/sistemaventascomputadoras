@@ -6,9 +6,9 @@ class PDF extends PPDF{
 	
 }
 
-include_once("../../class/tipo.php");
-$tipo=new tipo;
-$tip=array_shift($tipo->mostrar($id));
+include_once("../../class/productotipo.php");
+$productotipo=new productotipo;
+$tip=array_shift($productotipo->mostrar($id));
 
 
 $pdf=new PDF("P","mm","letter");
@@ -18,7 +18,6 @@ mostrarI(array("Nombre"=>$tip['nombre'],
 				"Descripción"=>$tip['descripcion'],
 				
 				
-				"Observación"=>$tip['observacion'],
 			));
 
 /*$foto="../foto/".$emp['foto'];
