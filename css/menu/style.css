@@ -18,7 +18,7 @@
   background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
   background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
   background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-  border-bottom: 2px solid #4783c4;
+  border-bottom: 2px solid #adb96e;
   width: auto;
 }
 #cssmenu:after,
@@ -66,7 +66,7 @@
   bottom: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #4783c4;
+  border-bottom: 10px solid #adb96e;
   margin-left: -10px;
 }
 #cssmenu > ul > li:first-child > a {
@@ -84,7 +84,7 @@
   bottom: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #4783c4;
+  border-bottom: 10px solid #adb96e;
   margin-left: -10px;
 }
 #cssmenu > ul > li.active > a {
@@ -128,7 +128,7 @@
   *margin-bottom: -1px;
 }
 #cssmenu .has-sub ul li a {
-  background: #4783c4;
+  background: #adb96e;
   border-bottom: 1px dotted #6e9dd0;
   filter: none;
   font-size: 11px;
