@@ -15,11 +15,14 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 	$mensaje[]="Archivo no válido del curriculum. Verifique e intente nuevamente";
 }
 */
-$valores=array(	"nombre"=>"'$nombre'",
-				"direccion"=>"'$direccion'",
+$valores=array(	"nombres"=>"'$nombres'",
+				"apellidos"=>"'$apellidos'",
+				"razonsocial"=>"'$razonsocial'",
+				"nitci"=>"'$nitci'",
 				"telefono"=>"'$telefono'",
-				"ncuenta"=>"'$ncuenta'",
-				"observacion"=>"'$observacion'",
+				"celular"=>"'$celular'",
+				"correo"=>"'$correo'",
+				"direccion"=>"'$direccion'",
 				
 				);
 				$proveedor->insertar($valores);

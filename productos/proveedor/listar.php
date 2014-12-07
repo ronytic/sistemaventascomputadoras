@@ -17,7 +17,7 @@ include_once "../../cabecerahtml.php";
             <form id="busqueda" action="busqueda.php" method="post" >
                 <table class="tablabus">
                     <tr>
-                        <td><?php campos("Nombre","nombre","text","",1,array("size"=>15));?></td>
+                        <td><?php campos("Nombre","nombres","text","",1,array("size"=>15));?></td>
                        
                         <td><?php campos("Buscar","enviar","submit","",0,array("size"=>15));?></td>
                     </tr>

@@ -14,13 +14,14 @@ $prov=array_shift($proveedor->mostrar($id));
 $pdf=new PDF("P","mm","letter");
 
 $pdf->AddPage();
-mostrarI(array("Nombre"=>$prov['nombre'],
-				"Dirección"=>$prov['direccion'],
+mostrarI(array("Nombres"=>$prov['nombres'],
+				"Apellidos"=>$prov['apellidos'],
+				"Razón Social"=>$prov['razonsocial'],
+				"Nit / C.I."=>$prov['nitci'],
 				"Teléfono"=>$prov['telefono'],
-				"Nro Cuenta"=>$prov['ncuenta'],
-				
-				
-				"Observación"=>$prov['observacion'],
+				"Celular"=>$prov['celular'],
+				"Dirección"=>$prov['direccion'],
+				"Correo"=>$prov['correo'],
 			));
 
 /*$foto="../foto/".$emp['foto'];

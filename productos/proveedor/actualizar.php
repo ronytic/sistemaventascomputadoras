@@ -5,11 +5,14 @@ include_once("../../class/proveedor.php");
 $proveedor=new proveedor;
 extract($_POST);
 //empieza la copia de archivos
-$valores=array(	"nombre"=>"'$nombre'",
-				"direccion"=>"'$direccion'",
+$valores=array(	"nombres"=>"'$nombres'",
+				"apellidos"=>"'$apellidos'",
+				"razonsocial"=>"'$razonsocial'",
+				"nitci"=>"'$nitci'",
 				"telefono"=>"'$telefono'",
-				"ncuenta"=>"'$ncuenta'",
-				"observacion"=>"'$observacion'",
+				"celular"=>"'$celular'",
+				"correo"=>"'$correo'",
+				"direccion"=>"'$direccion'",
 				
 				);
 				$proveedor->actualizar($valores,$id);

@@ -6,8 +6,8 @@ if (!empty($_POST)) {
 	extract($_POST);
 
 	$proveedor=new proveedor;
-	$prov=$proveedor->mostrarTodo("nombre LIKE '%$nombre%'");
-	$titulo=array("nombre"=>"Nombre","direccion"=>"Dirección","telefono"=>"Teéfono","observacion"=>"Observación");
+	$prov=$proveedor->mostrarTodo("nombres LIKE '%$nombres%'");
+	$titulo=array("nombres"=>"Nombres","apellidos"=>"Apellidos","razonsocial"=>"Razón Social","nitci"=>"Nit / CI","direccion"=>"Dirección","telefono"=>"Teléfono","celular"=>"Celular");
 	listadoTabla($titulo,$prov,1,"modificar.php","eliminar.php","ver.php");
 }
 ?>
