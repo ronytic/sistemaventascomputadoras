@@ -6,11 +6,11 @@ include_once '../funciones/funciones.php';
 include_once $folder.'cabecerahtml.php';
 ?>
 <?php include_once $folder.'cabecera.php';?>
-<div class="prefix_3 grid_4 suffix_3 imagenfondo">
+<div class="prefix_2 grid_4 suffix_3 imagenfondo">
 	<div class="">
     <fieldset class="contenido">
         <div class="titulo"><?php echo $titulo;?></div>
-        <form action="guardar.php" method="post">
+        <form action="guardar.php" method="post" enctype="multipart/form-data">
         <table class="tablareg">
             <tr>
                 <td><?php campos("Usuario","usuario","text","",1,array("required"=>"required","size"=>30));?></td>
@@ -29,9 +29,17 @@ include_once $folder.'cabecerahtml.php';
                 <td><?php campos("Teléfono","telefono","text","",0,array("size"=>30));?></td>
             </tr>
             <tr>
-                <td><?php campos("Email","email","text","",0,array("size"=>30));?></td>
-                <td><?php campos("Nivel","nivel","select",array("2"=>"Administrador","3"=>"Inventario","4"=>"Ventas"));?></td>
+            	<td><?php campos("Celular","celular","text","",0,array("required"=>"required","size"=>30));?></td>
+                <td><?php campos("Cargo","cargo","text","",0,array("size"=>30));?></td>
             </tr>
+            <tr>
+            	<td colspan="2"><?php campos("Foto","foto","file","",0,array("size"=>30));?></td>
+            </tr>
+            <tr>
+                <td><?php campos("Email","email","text","",0,array("size"=>30));?></td>
+                <td><?php campos("Nivel","nivel","select",array("2"=>"Gerente","3"=>"Encargado de Ventas","4"=>"Técnicos"));?></td>
+            </tr>
+            
             <tr>
                 <td colspan="2"><?php campos("Observación","observacion","textarea","","",array("rows"=>5,"cols"=>50,"size"=>30));?></td>
             </tr>
