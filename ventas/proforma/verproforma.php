@@ -126,9 +126,9 @@ $pdf->SetFont("arial","B",11);
 	$pdf->MultiCell(80,5,utf8_decode($prof['formapago']),1,"L",0);
 	$pdf->Ln(20);
 	$pdf->setx(80);
-	$pdf->Cell(50,5,utf8_decode("Departamento de Ventas"),1,1,"C");
+	$pdf->Cell(50,5,utf8_decode("Departamento de Ventas"),0,1,"C");
 	$pdf->setx(80);
-	$pdf->Cell(50,5,utf8_decode("R&E ARTE EN COMPUTACIÓN"),1,1,"C");
+	$pdf->Cell(50,5,utf8_decode("R&E ARTE EN COMPUTACIÓN"),0,1,"C");
 	$pdf->Ln();
 	
 
