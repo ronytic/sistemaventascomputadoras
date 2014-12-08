@@ -113,7 +113,7 @@ $(document).on("ready",function(){
                     
 				</table>
                 <div class="rojoC">Revise los Datos, no se Podrán modificar posteriormente</div>
-                <input type="submit" value="Confirmar Compra">
+                <input type="submit" value="Confirmar Venta">
             </fieldset>
         </div>
         </form>
